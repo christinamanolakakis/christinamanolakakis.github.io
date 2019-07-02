@@ -26,10 +26,8 @@ class ControlObject{
         this.objectset = []
 
 
-        this.selectedcolour = 'rgb(100,80,8, 0.2)'
-
-
-        
+        this.selectedcolour = "rgba(204,255,204,0.2)";
+       
     }
 
     mDown(e){
@@ -48,13 +46,23 @@ class ControlObject{
         // create the rectangle
        // var myROne = new Rectangle(this.xMouseStart,this.yMouseStart,this.w,this.h,this.selectedcolour)
         //this.objectset.push(myROne)
-        var xtina=new Ellipse(this.xMouseStart, this.yMouseStart, this.xMouse, this.yMouse, this.selectedcolour);
-        this.objectset.push(xtina);
-      
-    
+       // console.log(Button.shape)
+        if(Button.shape=="Rectangle"){
+            var myROne = new Rectangle(this.xMouseStart,this.yMouseStart,this.w,this.h,Swatch.colour)
+            this.objectset.push(myROne)
+        }
+        if(Button.shape=="Ellipse"){
+            var xtina=new Ellipse(this.xMouseStart, this.yMouseStart, this.xMouse, this.yMouse, Swatch.colour);
+            this.objectset.push(xtina);
+        }
+        if(Button.shape=="Circle"){
+            var circle=new Circle(this.xMouseStart, this.yMouseStart,this.xMouse, this.yMouse, Swatch.colour);
+            this.objectset.push(circle);
+
+            
+        }
 
     }
-
     update(){
         // in here write code to draw a background rectangle
 
@@ -69,7 +77,7 @@ class ControlObject{
         this.w=this.xMouse - this.xMouseStart;
         this.h=this.yMouse - this.yMouseStart;
         if(this.mouseDown){
-            console.log("mouse is down");
+           // console.log("mouse is down");
             this.draw();
         }
 
@@ -85,7 +93,7 @@ class ControlObject{
         ctx.beginPath();
         ctx.rect(x,y,w,h);
         ctx.lineWidth =1;
-        ctx.strokeStyle = "rgb(200,230,20)";
+        ctx.strokeStyle = "rgb(0,153,153)";
         ctx.stroke();
     }
 

@@ -48,8 +48,17 @@ class ControlObject{
         // create the rectangle
        // var myROne = new Rectangle(this.xMouseStart,this.yMouseStart,this.w,this.h,this.selectedcolour)
         //this.objectset.push(myROne)
-        var xtina=new Ellipse(this.xMouseStart, this.yMouseStart, this.xMouse, this.yMouse, this.selectedcolour);
-        this.objectset.push(xtina);
+        console.log(Button.shape)
+        if(Button.shape=="Rectangle"){
+            var myROne = new Rectangle(this.xMouseStart,this.yMouseStart,this.w,this.h,this.selectedcolour)
+            this.objectset.push(myROne)
+        }
+        if(Button.shape=="Ellipse"){
+            var xtina=new Ellipse(this.xMouseStart, this.yMouseStart, this.xMouse, this.yMouse, this.selectedcolour);
+            this.objectset.push(xtina);
+        }
+        if(Button.shape=="Circle"){}
+        
       
     
 
