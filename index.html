@@ -4,24 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Github</title>
+    <title>Christina Manolakakis Github</title>
     <style type="text/css">
+    body{
+        margin-left: 20px;
+        padding: 0px;
+        font-size:100%
+        font-family 'Times New Roman', Times, serif;
+        color:rgb(0,0,0);
+        background-color:bisque;
+    }
 
-    </style>
+    .container{
+    max-width:100%;
+    width: 70em;
+    background-color:2px solid #9ccaff;
+    margin:auto;
+    padding:2;
+    }
+  header{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+    }
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+    }
+    p{
+        font-family: 'Times New Roman';
+        font-size: 20px;
+    }
+    .vid_div{
+        margin-bottom: 30px;
+    }
+    img{
+        width:500px;
+        margin-bottom: 20px
+    }
+
+    .emphasise{
+        font-style: italic;
+        font-weight:bolder; 
+
+    }
+  </style>
 </head>
+<containor>
 <body>
-    <ul>  
 
-<li> <a href="Drawings/drawing.html"> Christina's drawing basics  </a> </li>
-<li> <a href="Interactions/interaction_base.html"> Christina's Interactions  </a> </li>
-<li> <a href="functions/functions.html"> Christina's functions  </a> </li>
-<li> <a href="Interactions/interaction_control.html"> Christina's control ineractions</a> </li>
-<li> <a href="loops/loops.html"> Christina's functions  </a> </li>
-<li> <a href="objects/objects.html"> Christina's objects </a> </li>
-<li> <a href="Animations/animationclass.html"> Christina's animations  </a> </li>
-<li> <a href="Animations/animationclass1.html"> Christina's animations 1 </a> </li>
-    </ul>
 
-   
+    <hr>
+<header>First Sprint</header>
+<a href="Version 1/index.html"> Version 1 </a> </div>
+<h2>Aim:My aim is to have a defined drawing area on the canvas and create my basic code </h2>
+<p>When the user down drags in this area, the bounding box shows the boundary defined by MouseStart and current Mouse coordinates.</p>
+<p>When the rectangle is released a coloured rectangle stays on the screen. </p>
+<p>I have checked through my console log that I have no errors so can continue to my next sprint</p>
+<h2>Sketch planning of Version 1:</h2>
+<img src="plan1.jpg">
+<h2>My trello planning:</h2>
+<img src="trello1.jpg">
+<h2> Testing </h2>
+    <p> This first test shows what my canvas looks like when drawing on the page, at the moment its only rectangles but will have other shapes in the following sprints.</p>
+    <div class="vid_div"><video width="600"  controls>
+            <source src="version1.mp4" type="video/mp4">
+                </video>
+    <p>This second test shows the console log and that it's all running properly, this second test explores how the bounding box appears when I click and drag in and out of the rectangle.<br>
+        This could be a bit more user friendly by staying at the boundary if the user drags outside , 
+        but this is a reasonable working version for now.
+</p>
+    <div class="vid_div"><video width="600"  controls>
+        <source src="V1console.mp4" type="video/mp4">
+            </video>
+
+
+<header>Second Sprint</header>
+<a href="Version 2/index.html"> Version 2 </a> </div>
+<h2>Aim:My aim for this second sprint is to draw a basic ellipse shape which will enable me to use it in my future sprints</h2>
+<p>I want the user to be able to use the mouse drag and succesfully draw the ellipse shape on the page</p>
+<p>I have one ellipse in the background and then the user can draw an ellipse when they want in a pre set colour</p>
+<h2>My trello planning:</h2>
+<img src="trello2.jpg">
+<h2>Screenshot of what the ellipse shape looks like on the page</h2>
+<img src="ellipse.jpg">
+<h2>Testing</h2>
+<p>This first test shows how instead of the rectangle it's now the ellipse shape and it also has a boundary box</p>
+<div class="vid_div"><video width="600"  controls>
+        <source src="version2.mp4" type="video/mp4">
+            </video>
+
+ 
+
+<header> Third Sprint</header>
+<a href="Version 3/index.html"> Version 3 </a> 
+<h2>Aim:My aim for this sprint is to have a true or false statement in the console when hovering over the buttons as an
+    indication of working buttons</h2>
+<p>In this sprint I have designed 3 rectangler buttons which enable my future webpage to have these working for the user to use.</p>
+<p>Both the buttons'Rectangle'and 'Ellipse' work in this sprint as I have declared a shape for them but in my next sprint I will make'Circle' work</p>
+<h2>My trello planning</h2>
+<img src="trello3.jpg">
+<h2>Screenshot of the true and false statements</h2>
+<img src="truefalse.jpg">
+<h2>Testing</h2>
+<p>This test shows how there are buttons which the user can select out of 'Rectangle', 'Ellipse' and 'Circle'. The rectangle and ellipse button works but the circle is yet to.
+    The console log is also shown with how the button works with the true and false statements and when dragging the shapes across it has "yes it's moving"
+</p>
+<div class="vid_div"><video width="600"  controls>
+        <source src="version3.mp4" type="video/mp4">
+            </video>
+
+
+
+<header>Fourth Sprint</header>
+<a href="Version 4/index.html"> Version 4 </a>
+<h2>Aim:My aim for this sprint is to have the 3 buttons working and design colour swatches which will work</h2>
+<p> When pressing on each of the buttons the colour swatches should work so the user can click and
+    press what they want.All of the shapes work now as I have put in a 'circle.js'</p>
+<p>In this sprint the colour swatches work when pressing them aswell as the shape buttons</p>
+<h2>My trello planning</h2>
+<img src="trello4.jpg">
+<h2>Screenshot of my chosen colours and shapes for my canvas as an example of what the user can do</h2>
+<img src="shapes.jpg">
+<h2>Testing</h2>
+<p>In my version 4 test I show how my colour swatches work in the console when pressed down it says true not false.
+    All my shapes work as all their js files are in the code. The boundary box works and all the colours work correctly.
+</p>
+<div class="vid_div"><video width="600"  controls>
+        <source src="version4.mp4" type="video/mp4">
+            </video>
+
+
+<header>Fifth Sprint</header>
+<a href="Version 5/index.html"> Version 5 </a> </div>
+<h2>Aim:My aim for this sprint is to finalise my web page and make sure there are no faults,
+    I want to make a boundary rectangle where the user can draw all their chosen shapes. </h2>
+<p>I plan for this sprint to be my final one and will perfect it to be a error free site</p>
+<p>It has updated colours which suit the page well</p>
+<p>I am going to thoroughly comment my code in this last sprint</p>
+<h2>My trello planning</h2>
+<img src="trello5.jpg">
+<h2>Screenshot of my finalised site and colours drawn in my rectangle</h2>
+<img src="V5.jpg">
+<h2>Testing</h2>
+<p>In my fifth and final test I show how the rectangle is in the boundary of where you can draw the shapes
+    and it does not allow the user to drag outside of this. In this clip it also shows my console log which has nothing showing anymore.
+    The user can succesfully use any of the shapes and colours to decorate the canvas as they desire
+</p>
+<div class="vid_div"><video width="600"  controls>
+        <source src="version5.mp4" type="video/mp4">
+            </video>
+
+
+<h2>Relevant Implications</h2>
+<h2>Future Proofing</h2>
+<p>Program is designed so new features can be added easily and old ones removed </p>
+<ul>- It has been adressed in the way the program has been designed.</ul> 
+<ul>-Project elements( colours, buttons, shapes) have all been programmed as objects, 
+means each object is a self-contained, modular piece of code, 
+that takes a defined set of parameters to work,(may take basic mouse data and color)</ul>
+<ul>- Many objects take basic mouse date startDrag and current position and a colour to be implemented</ul>
+<ul>- All objects are built to a similar structure and compulsory contain an update function which means they can appear on the interface using the update call, 
+management of most of the objects happens in a central place (control object)</ul>
+<ul>-The idea is that an experienced programmer would easily be able to remove elements or add new features, 
+comments are also precise and informative.</ul>
+<uL>- I have thoroughly commented my code to give further guidance</uL>
+<p>
+<h2>Functionality </h2>
+<p> Does the program work well? Is it free of bugs? loads quickly? works on different browsers? have we addressed this? </p> 
+<ul>-Program is pure javascript, has no graphics, so loads very quicky </ul>
+<ul>-I have tested by using a live web server to store my versions and have observed loading performance</ul>
+<ul>- To ensure the program works well I have systematically tested it, tested user interactions (position of clicking and direction of dragging. This has included careful checks around boundaries. </ul>
+<ul>-The use of the Math.abs function was discovered after testing failures drawing circular shapes(because these objects where being given negative radius values).</ul>
+<ul>-Any new components were tested prior to being added to the main program. </ul>
+<ul>-At various stages in sprints, console logging was used to analyze boundary test functions, and locate problems when bugs appeared.</ul>
+</p>
+<h2>Examples of Trialing and Making Decisions</h2>
+<p>Can you find examples of exploring different options and making a decision about which is the best solution? </p>
+<ul>- When deciding on how big the swatches and buttons were trialling on what x,y,w,h coordinates fit to make the canvas look the best</ul>
+<ul>- Discovering through the size of the rectangle and position of the swatches that I couldn't make the canvas anything but 800px as making it 900px didn't allow it to be in line with the colour swatches </ul>
+<ul>- What the best way was to do the colour buttons (which was by loops)</ul>
+<ul>- Was about to make a line.js but then decided that the circle shape looked a lot cleaner on the canvas</ul>
+</p>
+<p>
+Effectively using information from testing and trialing to improve the functionaility of the outcome. 
+<ul>- Trialling different color themes</ul> 
+<ul>- Trialling the different shapes such as ellipse and circle </ul>
+<ul>- Changing the transparency of the colors </ul>
+<ul>- Look too similar </ul>
+<ul>- Trialling drawing process on picture canvas to make sure they don't go off the edge or on different parts of the screen </ul>
+<ul>- Changing the colour scheme (which ones go together)</ul>
+<ul>- Adjusting the rgb col array to the desired colours</ul>
+</p>
+<p>
+How did your working process(planning, testing, trialing)lead to the development of a high-quality digital outcome? 
+How was the Agile process helpful? 
+<ul>- Allowed planning and development to happen together </ul>
+<ul>- Created repeated cycles of plan - develop - test. </ul>
+<ul>- Broke the development stage into parts so was easy to work through one step at a time</ul>
+<ul>- Most essential thing I needed to do was to test in the console log along the way so I had the idea everything was running smoothly</ul>
+<ul>- After two or three sprints I got a much better idea of what I could achieve and my aims became much more focused and realistic </ul>
+<ul>- This project was hard to start with as it took time to get familiar with visual studio code but I learnt it along the way</ul>
+</p>
+
+
+
+<h2>The first steps towards making my webpage are these Basic Drawings, Interactions, Functions and Animations</h2>
+<P>These are all my beginning codes which have some working shapes and were the steps to lead up to my sprints</P>
+
+<ul>  
+    <li> <a href="Drawings/drawing.html"> Christina's drawing basics  </a> </li>
+    <li> <a href="Interactions/interaction_base.html"> Christina's Interactions  </a> </li>
+    <li> <a href="functions/functions.html"> Christina's functions  </a> </li>
+    <li> <a href="Interactions/interaction_control.html"> Christina's control ineractions</a> </li>
+    <li> <a href="loops/loops.html"> Christina's functions  </a> </li>
+    <li> <a href="objects/objects.html"> Christina's objects </a> </li>
+    <li> <a href="Animations/animationclass.html"> Christina's animations  </a> </li>
+    <li> <a href="Animations/animationclass1.html"> Christina's animations 1 </a> </li>
+      </ul>
+
+
+
+
+
+    </container>
 </body>
 </html>
